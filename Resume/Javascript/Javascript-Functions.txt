@@ -1,0 +1,99 @@
+NAMED FUNCTIONS
+
+  function functionName(argument1, argument2,...){
+   // Instruction 1
+   // Instruction 2
+   // ...
+  }
+
+ANONIMOUS FUNCTIONS AS VALUES
+
+  var functionName = function (argument1, argument2,...) {
+  // Instruction 1
+  // Instruction 2
+  // ...
+  }
+
+OUR FIRST FUNCTION
+
+  function sayHello(){
+  console.log("Hello World");
+  }
+
+  sayHello();
+
+RETURN VALUES
+  function calculator () {
+    var result = sumNumbers();
+
+    console.log("the result is " + result);
+  }
+
+  function sumNumbers () {
+    return 2 + 2;
+  }
+
+  function multiplyNumbers () {
+    return 3 * 3;
+  }
+
+  calculator();
+
+ARGUMENTS
+
+    function sumNumbers(numberOne, numberTwo) {
+    return numberOne + numberTwo;
+  }
+
+  var result = sumNumbers(3,3);
+  console.log("The result is " + result);
+
+FUNCTIONS ARGUMENTS VALUE
+
+  var animalArray = ["Dog", "Fish", "Cat"];
+
+  function printLength(arrayToCount){
+    var theLength = arrayToCount.length;
+
+    console.log("The length of your array is " + theLength);
+  }
+
+  printLength(animalArray);
+
+FUNCTION SCOPE
+
+  // Declaring a global variable
+  var company = "Ironhack";
+
+  function sayHello(){
+    var firstName = "Josh";
+    console.log("Name inside of the function: " + firstName);
+    console.log("We are in a " + company + " course.");
+  }
+
+  sayHello();
+
+  console.log(company);
+  // Throws an error because there's no variable firstName in scope
+  console.log(firstName);
+
+
+  var city = "Madrid";
+
+  function printCityName (city) {
+    // It will print "Miami" since it is declared the local scope as an argument.
+    console.log(city);
+  }
+
+  printCityName("Miami");
+
+  function printCityName2 () {
+    // It will print "Madrid" since it has no variables in the local scope with that reference.
+    console.log(city);
+  }
+
+  printCityName2();
+
+  console.log(city);
+
+

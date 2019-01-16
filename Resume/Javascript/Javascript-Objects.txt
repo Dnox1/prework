@@ -1,0 +1,72 @@
+OBJETCS JAVASCRIPT
+
+OBJECT
+  var olympicRecords = {
+    athletics100Men: "Justin Gatlin",
+    athleticsLongJumpMen: "Mike Powel"
+  }
+
+ACCESING VALUE
+
+  var olympicRecords = {
+    athletics100Men: "Justin Gatlin",
+    athleticsLongJumpMen: "Mike Powel"
+  }
+
+  console.log(olympicRecords);
+  console.log("- - - - - - - -");
+
+  console.log(olympicRecords.athletics100Men + " dot");
+  console.log(olympicRecords["athletics100Men"] + " brackets");
+
+ADDING PROPERTIES TO THE OBJECT
+
+  var olympicRecords = {
+    athletics100Men: "Justin Gatlin",
+    athleticsLongJumpMen: "Mike Powel"
+  }
+
+  olympicRecords.swimming200Men = "Michael Phelps";
+  olympicRecords["swimming400Women"] = "Katie Ledecky";
+
+  console.log(olympicRecords);
+
+UPDATE VALUES
+  
+  olympicRecords.athletics100Men = "Usain Bolt";
+  olympicRecords["athletics100Men"] = "Usain Bolt";
+
+REMOVING PROPERTIES
+  olympicRecords.doubleOllie = "Chris Chann";
+  console.log(olympicRecords);
+
+  delete olympicRecords.doubleOllie;
+  delete olympicRecords["doubleOllie"];
+  console.log(olympicRecords);
+
+LIST PROPERTIES
+
+  Object.Keys(olympicRecords);
+
+LIST VALUES
+
+  for (var recordName in olympicRecords) {
+    console.log("recordName: " + recordName);
+  }
+
+  for (var nombredelrecord in olympicRecords) {
+    console.log("Value: " + olympicRecords[nombredelrecord])
+  }
+
+  for (var recordName in olympicRecords){
+    console.log("The Vaule of " + recordName + " is " + olympicRecords[recordName]);
+  }
+
+MORE CONTENT
+
+Object - MDN Documentation. = https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+Property Accessors - MDN Documentation. = https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors
+delete operator - Delete a property from an Object. = https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
+Object.keys() method - Lists all the properties of an Object = https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+
+

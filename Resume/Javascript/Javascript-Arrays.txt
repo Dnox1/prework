@@ -1,0 +1,89 @@
+JAVASCRIPT Basic Data Types: Arrays
+
+
+5 Basic Data Types: Arrays
+  var animalsArray = [];
+  var animalsArray = ["dog", "cat", "snake"];
+
+  ARRAY ACCESS INDEX 
+    var animalArray = ["Dog", "Cat", "Fish"];
+
+    var myDog = animalArray[0];
+    console.log(myDog);
+
+  ARRAY LENGTH
+    console.log(animalArray.length);
+
+  GET THE LAST ELEMENT OF ARRAY
+    var animalArray = ["Dog", "Cat", "Fish"];
+
+    // Notice, it's the length - 1
+    // The array's index starts at 0, and we must compensate
+    var lastIndex = animalArray.length - 1;
+    var lastElement = animalArray[lastIndex];
+
+    console.log(lastElement);
+    // Fish
+
+  ADD ELEMENT TO THE END OF ARRAY
+    animalArray.push("Lizard");
+    console.log(animalArray);
+
+  Adding at a Specific Position in an Array
+    animalArray[6] = "Turtle";
+    console.log("Adding some element: " + animalArray);
+
+  Adding at the Beginning of an Array
+
+    animalArray.unshift("Whale");
+    console.log(animalArray);
+
+  Removing Items
+    delete animalArray[0];
+    console.log(animalArray);
+
+  SPLICE: REMOVE & REPLACEMENT
+    // "From the first element, remove one going forward"
+    // If we pass a third argument
+    // It is inserted as the replacement
+    animalArray = ["Dog", "Cat", "Fish", "Lizard", "Whale", "Cheetah"];
+    console.log(animalArray);
+    animalArray.splice(0, 1, "Something else");
+    console.log(animalArray);
+
+  ARRAY ITERATIONS
+
+  Array Iterations FOR loops
+    var animalArray = ["Dog", "Cat", "Fish"];
+    for (var i = 0; i < animalArray.length; i++){
+    console.log(animalArray[i]);
+      }
+
+  Zero Base Numbering.
+    var lastIndex = array.length - 1;
+
+  Array Iterations While Loops
+    var counter = 0;
+    var animalArray = ["Dog", "Cat", "Fish"];
+    while (counter < animalArray.length){
+      console.log(animalArray[counter]);
+      counter++;
+        }
+        
+  Array Iterations ForEach
+    var animalArray = ["Dog", "Cat", "Fish"];
+    animalArray.forEach(function(animal){
+    console.log(animal);
+    });
+
+
+- - - - - - - - - - - - -
+
+Exercise 1
+
+  var foodArray = ["Pizza", "Pasta", "Salad", "Paella", "Gazpacho", "Postre"]
+  for (var i = 0; i < foodArray.length; i++){
+    if (i % 3 === 0) { continue; }
+    console.log(foodArray[i]);
+  }
+

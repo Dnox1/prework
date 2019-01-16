@@ -1,0 +1,86 @@
+MATRIX 
+
+Create a Matrix | Battleship Board
+
+  var board = [
+   [null, null, null, "S", null],
+    [null, "S", null, "S", null ],
+    ["S", null, null, null, null ],
+    [null, "S", null, null, null],
+    [null, null, null, null, "S"]
+  ];
+
+Access a Row
+
+  var firstRow = board[0];
+  console.log("First Row: " + firstRow);
+
+  var secondRow = board[1];
+  console.log("Second Row: " + secondRow);
+
+  var thirdRow = board[2];
+  console.log("Third Row: " + thirdRow);
+
+Access a Column | Finding Ships
+
+  var board = [
+    [null, null, null, "S", null],
+    [null, "S", null, "S", null ],
+    ["S", null, null, null, null ],
+    [null, "S", null, null, null],
+    [null, null, null, null, "S"]
+  ];
+
+  var firstRow = board[0];
+
+  var emptySpace  = firstRow[0];
+  var ship = firstRow[3];
+
+  console.log("Empty Space: " + emptySpace);
+  console.log("Ship: " + ship);
+
+  // We can also shortcut assigning the row to a variable
+  console.log("Third row, first col: " + board[2][0]);
+
+MATRIX ITERATION
+
+  var board = [
+    [null, null, null, "S", null],
+    [null, "S", null, "S", null ],
+    ["S", null, null, null, null ],
+    [null, "S", null, null, null],
+    [null, null, null, null, "S"],
+  ];
+
+  for (var i = 0; i < board.length; i++){
+    // A single row, such as board[0], board[1], board[2]
+    var row = board[i];
+    // Loop over each element in the row
+    // We use "j" because "i" is already being used.
+    // What would happen if we used i in this loop instead? Try it.
+    for (var j = 0; j < row.length; j++){
+      var column = row[j];
+      // If the column is a ship, log the coords
+      if (column === "S"){
+        console.log("Ship Found at: " + i + ", " + j);
+      }
+      // Instead of using variables, you could reference: board[i][j]
+    }
+  }
+
+Modifying Matrices | Playing Battleship
+
+
+
+RANDOM numbers & min & max  
+  (The Math.random() function returns a floating-point, pseudo-random number in the range 0–1 (inclusive of 0, but not 1) with approximately uniform distribution over that range)
+  (The Math.floor() function returns the largest integer less than or equal to a given number.)
+  (The Math.ceil() function returns the smallest integer greater than or equal to a given number.
+  )
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+}
+
+console.log(getRandomIntInclusive(0,10));

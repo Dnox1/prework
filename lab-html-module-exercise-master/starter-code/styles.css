@@ -1,0 +1,339 @@
+
+
+ 
+
+body{
+  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+  font-family: "Source Sans Pro", "Lucida Grande", "sans-serif";
+  margin: 0;
+  padding: 0;
+} 
+
+.clearfix {
+    clear: both;
+}
+
+nav {
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding-top: 10px;
+  height: 30px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container-web {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.top-left {
+  float: left;
+  padding-left: 0px;
+}
+
+.top-left a {
+  padding-right: 0px;
+}
+
+nav a {
+  position: static;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+/*
+.top-left {
+  position: right;
+}
+*/
+.top-links {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+
+.top-links li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#section1 {
+  background: rgb(31, 82, 111);
+  width: 100%;
+  height: 50px;
+}
+
+.header-search {
+  padding-top: 10px;
+  width: 100%;
+  display: inline-block;
+}
+
+.search-menu-col1 {
+  width: 8%;
+  float: left;
+}
+
+.search-menu-col2 {
+  width: 78%;
+  float: left;
+}
+
+.search-box {
+  width: 95%;
+  height: 25px;
+  background: rgb(32, 101, 136);
+  border: none;
+  color: white;
+}
+.search-button {
+  padding-bottom: 2px;
+  height: 27px;
+  background: rgb(32, 101, 136);
+  border: none;
+
+}
+.search-menu-col3 {
+  width: 12%;
+  float: left;
+  color: white;
+}
+
+
+.search-menu-col3 a{
+  color:white;
+  text-decoration: none;
+}
+
+.bear {
+  margin-top: -4px;
+  margin-left: 2px;
+  float: right;
+}
+.search-menu-col3 p{
+  margin-top: 2px;
+  text-align: left;
+}
+
+.header-slide {
+  width: 100%;
+  background-color: rgb(32, 101, 136);
+  background-size:cover;
+  background-image: url("city-scape.svg");
+  background-origin: 0,0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  
+}
+
+.header-slide-text-box {
+  padding: 5% 13% 6% 23.5%;  
+  text-align: left;
+  color: white;
+  width: 25%;
+  
+}
+
+.header-slide-text-box h1 {
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.header-slide-text-box button {
+  text-align: center;
+  background: rgb(240, 146, 51); 
+  color: white;
+  border: none;
+  padding: 10px 35px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#collaboration {
+  background-color: rgb(39, 53, 71);
+  width: 100%;
+}
+
+.collabolation-box {
+  max-height: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* SECURITY SECTION*/
+
+#security {
+  width: 100%;
+  background-color: rgb(39, 53, 71);
+}
+
+.security-section {
+  width: 100%;
+  /*max-height: 400px;*/
+  background-color: rgb(39, 53, 71);
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgb(39, 53, 71);
+}
+
+.col1 {
+  padding: 0% 0% 0% 8%;  
+  /*max-height: 350px;*/
+  width: 42%;
+  /*float: left;*/
+  background-color: rgb(39, 53, 71);
+}
+
+.col1 img {
+  max-heigth: 650px;
+  margin: 20% 4% 40% 24%;
+}
+
+.col2 {
+  max-height: 650px;
+  max-width: 58%;
+  float: right;
+  background-color: rgb(39, 53, 71);
+  padding: 6% 14% 2% 0%;
+}
+.col2-text {
+  width: 448px;
+}
+.col2 h2 {
+  color: white;
+  font-size: 2.25em;
+  font-weight: 200;
+
+}
+
+.col2 ul {
+  color: white;
+  font-size: 1.25em;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.col-2-link {
+  color: white;
+  text-decoration: none;
+  text-align: center; 
+  margin: 0 auto;
+  
+}
+
+.col2 a {
+  color: white;
+  text-decoration: none;
+  text-align: center; 
+}
+
+.col2 p {
+  color: white;
+  text-decoration: none;
+}
+
+.col2-button {
+  width: 80%;
+  background-color: rgb(203, 56, 55);
+  color: white;
+  padding: 12px 105px;
+  margin: 0px 10%;
+  text-decoration: none;
+  border: none;
+  text-align: center; 
+  border-radius: 20px;
+  font-size: 1.25em;
+
+}
+
+/*CSS WHAT IS NPM*/
+.section-2 {
+  width: 100%;
+  background-color: rgb(32, 101, 136);  
+  background-image: url("forklift.svg");
+  background-size:cover;
+}
+
+.text-2 {
+  width: 20%;
+  color: white;;
+  margin: 0;
+  padding: 5% 13% 6% 23.5%;
+  
+}
+.text-2 h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+}
+
+.text-2 p {
+  padding-bottom: 20px; 
+  text-align: center; 
+  margin: 0 auto;
+
+}
+.text-2 a {
+  background-color: rgb(49, 68, 88);
+  color: white;
+  padding: 10px 25px;
+  margin: 0 auto;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+}
+
+/* Section 3*/
+.section-3 {
+  width: 55%;
+  padding-top: 75px;
+  margin: 0 auto;
+  line-height: 1.15;
+}
+
+.section-3-text {
+  width: 100%;
+  text-align: center;
+}
+
+.section-3-text h2{
+  font-size: 2.25em;
+  font-weight: 200;
+}
+
+.icons {
+  padding: 35px 0px 30px 0px;
+  width: 100%;
+  float: left;
+}
+
+.icon {
+  text-align: center;
+  width: 33%;
+  margin: 0px auto;
+}
+
+.icon p {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.icon a {
+  color: red;
+  text-decoration: none;
+}
+
+.icon img {
+  height: 100px;
+}
+
+.icon h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
