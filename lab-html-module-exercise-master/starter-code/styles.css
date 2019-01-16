@@ -286,6 +286,7 @@ nav a {
   text-decoration: none;
   border: none;
   text-align: center;
+  border-radius: 20px;
 }
 
 /* Section 3*/
